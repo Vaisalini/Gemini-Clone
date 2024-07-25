@@ -1,0 +1,174 @@
+.main{
+   
+    min-width: 180vh;
+    min-height: 100vh;
+    
+    
+    
+    
+   
+    
+
+}
+.main .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    padding: 25px;
+    color: #585858;
+    position: relative;
+
+}
+.main .nav img{
+    width:50px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    
+   
+}
+
+.main-container{
+    max-width: 900px;
+    margin:auto;
+}
+
+.main .greet{
+    margin: 2px 0px;
+    font-size: 50px;
+    color:#c4c7c5;
+    font-weight: 500;
+    
+    align-items: center;
+}
+
+.main .greet span{
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.main .card{
+    
+    
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .card .p{
+    color: #585858;
+}
+
+.main .card:hover{
+    background-color: #dfe4ea;
+}
+
+.main-bottom{
+    position: absolute;
+    bottom:5%;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.searchbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 10px;
+    height:fit-content;
+    border-radius: 50px;
+
+
+}
+
+.searchbox img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.searchbox input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+
+
+}
+
+.searchbox div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.result{
+    padding: 0px 5%;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.result img{
+    width: 40px;
+    border-radius: 50%;
+}
+.result-data{
+    align-items: start;
+    display: flex;
+    gap: 20px;
+}
+
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader hr{
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right,#9ed7ff,#ffffff,#9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear; 
+}
+
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+
+
+}
+
+.result-data p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
